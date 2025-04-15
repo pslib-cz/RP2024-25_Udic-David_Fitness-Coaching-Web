@@ -1,0 +1,165 @@
+.navbar {
+  position: relative;
+  background-color: var(--color-navbar-background);
+  padding: 20px;
+  box-shadow: 0 2px 4px var(--color-navbar-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.navbarBrand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.brandLink {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.desktopNav {
+  display: none;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.navLink:hover {
+  background-color: var(--color-secondary-background);
+}
+
+.mobileNav {
+  display: flex; 
+  align-items: center;
+}
+
+.menuToggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.mobileMenu {
+  position: absolute; 
+  top: 100%; 
+  right: 0; 
+  background-color: var(--color-navbar-background);
+  width: 250px; 
+  box-shadow: -2px 2px 4px var(--color-navbar-shadow); 
+  border-radius: 0 0 0 10px; 
+  overflow: hidden; 
+  transform-origin: top right; 
+  transform: scaleY(0); 
+  transition: transform 0.3s ease-out; 
+  z-index: 1010; 
+}
+
+.mobileMenu.open {
+  transform: scaleY(1); 
+}
+
+.mobileMenuList {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.mobileMenuItem {
+  margin-bottom: 15px;
+}
+
+.mobileMenuItem:last-child {
+  margin-bottom: 0; 
+}
+
+.mobileMenuLink {
+  display: block; 
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.mobileMenuLink:hover {
+  background-color: var(--color-secondary-background);
+}
+
+
+@media (min-width: 769px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .desktopNav {
+    display: flex; 
+    align-items: center; 
+  }
+
+  .mobileNav {
+    display: none; 
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px; 
+  }
+
+  .navbarBrand {
+    font-size: 1.3em;
+  }
+
+  .mobileMenu {
+    width: 220px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .navbarBrand {
+    font-size: 1.2em; 
+  }
+
+  .mobileMenu {
+    width: 200px; 
+  }
+
+  .mobileMenuList {
+    padding: 15px; 
+  }
+
+  .mobileMenuItem {
+    margin-bottom: 12px;
+  }
+}

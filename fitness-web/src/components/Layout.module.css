@@ -1,0 +1,45 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 30px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.homePageContent {
+  margin: -30px -40px;
+  width: calc(100% + 80px);
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 20px 15px;
+  }
+  
+  .homePageContent {
+    margin: -20px -15px;
+    width: calc(100% + 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 15px 12px;
+  }
+  
+  .homePageContent {
+    margin: -15px -12px;
+    width: calc(100% + 24px);
+  }
+}
