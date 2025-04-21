@@ -1,0 +1,478 @@
+.kontaktContainer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .heroSection {
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #121212 0%, #121212 100%);
+    overflow: hidden;
+    padding: 60px 20px;
+  }
+  
+  .heroPattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(30deg, rgba(0, 136, 204, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(0, 136, 204, 0.1) 87.5%, rgba(0, 136, 204, 0.1)),
+      linear-gradient(150deg, rgba(0, 136, 204, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(0, 136, 204, 0.1) 87.5%, rgba(0, 136, 204, 0.1)),
+      linear-gradient(30deg, rgba(0, 136, 204, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(0, 136, 204, 0.1) 87.5%, rgba(0, 136, 204, 0.1)),
+      linear-gradient(150deg, rgba(0, 136, 204, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(0, 136, 204, 0.1) 87.5%, rgba(0, 136, 204, 0.1)),
+      linear-gradient(60deg, rgba(0, 160, 204, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 160, 204, 0.1) 75%, rgba(0, 160, 204, 0.1)),
+      linear-gradient(60deg, rgba(0, 160, 204, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 160, 204, 0.1) 75%, rgba(0, 160, 204, 0.1));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    z-index: 0;
+    animation: movePattern 60s linear infinite;
+  }
+  
+  @keyframes movePattern {
+    0% {
+      background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    }
+    100% {
+      background-position: 1000px 0, 1000px 0, 1040px 70px, 1040px 70px, 1000px 0, 1040px 70px;
+    }
+  }
+  
+  .heroContent {
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .subtitle {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0088cc;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 0 10px;
+  }
+  
+  .subtitle::before, .subtitle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background-color: rgba(0, 136, 204, 0.5);
+  }
+  
+  .subtitle::before {
+    left: -40px;
+  }
+  
+  .subtitle::after {
+    right: -40px;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: white;
+    line-height: 1.1;
+    position: relative;
+  }
+  
+  .separator {
+    height: 3px;
+    width: 80px;
+    background: linear-gradient(90deg, transparent, #0088cc, transparent);
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .formDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+
+  .formSection {
+    padding: 60px 20px;
+    background-color: var(--color-background);
+  }
+  
+  .formContainer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+
+  .contactForm {
+    width: 100%;
+    background-color: var(--color-secondary-background);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  :global(.dark-mode) .contactForm {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .formColumns {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .formColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .formRow .formGroup {
+    flex: 1;
+    min-width: calc(33.333% - 10px);
+  }
+  
+  .formFullWidth {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 0;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+  }
+  
+  .formInput,
+  .formSelect,
+  .formTextarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    transition: all 0.3s ease;
+  }
+  
+  :global(.dark-mode) .formInput,
+  :global(.dark-mode) .formSelect,
+  :global(.dark-mode) .formTextarea {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .formInput:focus,
+  .formSelect:focus,
+  .formTextarea:focus {
+    border-color: #0088cc;
+    box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.15);
+    outline: none;
+  }
+  
+  .formInput::placeholder,
+  .formTextarea::placeholder {
+    color: #999;
+  }
+  
+  :global(.dark-mode) .formInput::placeholder,
+  :global(.dark-mode) .formTextarea::placeholder {
+    color: #666;
+  }
+  
+  .formTextarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .formCheckbox {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: #0088cc;
+  }
+  
+  .privacyLabel {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+  }
+  
+  .privacyLink {
+    color: #0088cc;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+  
+  .privacyLink:hover {
+    color: #006bb3;
+  }
+  
+  :global(.dark-mode) .privacyLink {
+    color: #00a0cc;
+  }
+  
+  :global(.dark-mode) .privacyLink:hover {
+    color: #0088cc;
+  }
+  
+  .submitButton {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #0088cc, #00a0cc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .submitButton:hover {
+    background: linear-gradient(90deg, #006bb3, #0088cc);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
+  }
+  
+  .errorMessage {
+    background-color: rgba(255, 87, 87, 0.1);
+    border-left: 4px solid #ff5757;
+    color: #d32f2f;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .errorMessage p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  .successMessage {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--color-secondary-background);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  :global(.dark-mode) .successMessage {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .successMessage h2 {
+    color: #0088cc;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .successMessage p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--color-text-primary);
+  }
+  
+  .resetButton {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #0088cc, #00a0cc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .resetButton:hover {
+    background: linear-gradient(90deg, #006bb3, #0088cc);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
+  }
+  
+  .submitButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  @media (max-width: 900px) {
+    .formSection {
+      padding: 50px 20px;
+    }
+    
+    .contactForm {
+      padding: 30px;
+    }
+    
+    .title {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection {
+      min-height: 250px;
+      padding: 40px 15px;
+    }
+    
+    .title {
+      font-size: 2.5rem;
+    }
+    
+    .subtitle::before, .subtitle::after {
+      width: 20px;
+    }
+    
+    .subtitle::before {
+      left: -25px;
+    }
+    
+    .subtitle::after {
+      right: -25px;
+    }
+    
+    .formDescription {
+      font-size: 1rem;
+    }
+    
+    .formSection {
+      padding: 40px 15px;
+    }
+    
+    .formColumns {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .formRow {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .formRow .formGroup {
+      width: 100%;
+    }
+    
+    .contactForm {
+      padding: 25px;
+    }
+    
+    .successMessage {
+      padding: 30px 20px;
+    }
+    
+    .successMessage h2 {
+      font-size: 1.6rem;
+    }
+    
+    .successMessage p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heroSection {
+      min-height: 200px;
+      padding: 30px 15px;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .subtitle {
+      font-size: 1rem;
+    }
+    
+    .subtitle::before, .subtitle::after {
+      display: none;
+    }
+    
+    .formDescription {
+      font-size: 0.9rem;
+    }
+    
+    .formSection {
+      padding: 30px 15px;
+    }
+    
+    .contactForm {
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+    .formInput,
+    .formSelect,
+    .formTextarea {
+      padding: 10px 12px;
+      font-size: 0.9rem;
+    }
+    
+    .submitButton {
+      padding: 12px 20px;
+    }
+    
+    .successMessage {
+      padding: 25px 15px;
+    }
+    
+    .successMessage h2 {
+      font-size: 1.4rem;
+    }
+    
+    .resetButton,
+    .submitButton:disabled {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+    }
+  }
