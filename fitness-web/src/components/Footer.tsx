@@ -9,7 +9,6 @@ const Footer: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      {}
       <div className={styles.footerMain}>
         <div className={styles.footerContainer}>
           <div className={styles.footerColumn}>
@@ -61,7 +60,7 @@ const Footer: React.FC = () => {
               </p>
               <p>
                 <HiOutlinePhone style={{ marginRight: '8px' }} />
-                <a href="tel:+420123456789" className={styles.footerLink}>+420 727 828 136</a>
+                <a href="tel:+420123456789" className={styles.footerLink}>+420 123 456 789</a>
               </p>
               <p>
                 <HiOutlineLocationMarker style={{ marginRight: '8px' }} />

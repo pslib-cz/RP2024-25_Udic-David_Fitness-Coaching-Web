@@ -8,38 +8,41 @@
 
 .mainContent {
   flex: 1;
-  padding: 30px 40px;
-  max-width: 1440px;
-  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .homePageContent {
-  margin: -30px -40px;
-  width: calc(100% + 80px);
-  max-width: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .mainContent {
-    padding: 20px 15px;
+.footer {
+  background-color: var(--color-footer-background);
+  color: var(--color-footer-text);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .layoutContainer {
+    width: 100%;
+    max-width: 100%;
   }
   
-  .homePageContent {
-    margin: -20px -15px;
-    width: calc(100% + 30px);
+  .mainContent {
+    width: 100%;
   }
 }
 
-@media (max-width: 480px) {
-  .mainContent {
-    padding: 15px 12px;
-  }
-  
-  .homePageContent {
-    margin: -15px -12px;
-    width: calc(100% + 24px);
-  }
+@media screen and (max-width: 480px) {
+
 }

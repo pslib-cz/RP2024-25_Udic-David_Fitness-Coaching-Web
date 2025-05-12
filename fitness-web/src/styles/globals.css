@@ -55,7 +55,7 @@ html {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow-x: hidden !important; /* Vynucené skrytí horizontálního scrollbaru */
   width: 100%;
   position: relative;
   margin: 0;
@@ -105,32 +105,6 @@ img {
   display: block;
 }
 
-/* Specifické styly pro layout */
-.layoutContainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.mainContent {
-  flex: 1;
-  padding: 30px 40px;
-  max-width: 1440px;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.footer {
-  background-color: var(--color-footer-background);
-  color: var(--color-footer-text);
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-}
-
 /* Specifická pravidla pro mobilní zařízení */
 @media screen and (max-width: 768px) {
   html {
@@ -141,25 +115,11 @@ img {
     -webkit-overflow-scrolling: touch;
     touch-action: manipulation;
   }
-  
-  .layoutContainer {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .mainContent {
-    padding: 20px 15px;
-    width: 100%;
-  }
 }
 
 /* Ještě menší obrazovky */
 @media screen and (max-width: 480px) {
   html {
     font-size: 14px; /* Ještě menší základní velikost písma na malých mobilech */
-  }
-  
-  .mainContent {
-    padding: 15px 12px;
   }
 }

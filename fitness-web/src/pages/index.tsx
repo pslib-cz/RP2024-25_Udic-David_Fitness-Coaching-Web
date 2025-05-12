@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useRef, useState, useEffect } from 'react';
 import styles from './index.module.css';
 import layoutStyles from '../components/Layout.module.css';
@@ -60,68 +61,68 @@ const HomePage: React.FC = () => {
         <meta name="description" content="Profesionální fitness coaching, tréninkové plány a výživové poradenství pro váš lepší životní styl." />
       </Head>
       
-      <div className={`${styles.homepageContainer} ${layoutStyles.homePageContent}`}>
-        <section className={styles.heroSection}>
-          <div className={styles.heroBackdrop}></div>
-          <div className={styles.heroContainer}>
-            <div className={styles.heroContent}>
-              <div className={styles.heroTextContent}>
-                <div className={styles.heroTagline}>ONLINE TRENÉR</div>
-                <h1 className={styles.heroTitle}>
-                  <span className={styles.heroTitleMain}>DAVID</span> 
-                  <span className={styles.heroTitleOutline}>UDIČ</span>
-                </h1>
-                <p className={styles.heroText}>
-                  Jídelníčky a tréninkové plány. Pomůžu vám dosáhnout vašich fitness cílů!
-                </p>
-                <div className={styles.heroButtons}>
-                  <Link href="/recenze" className={styles.secondaryButton}>
-                    Přečíst si recenze klientů
-                  </Link>
-                  <Link href="/sluzby" className={styles.primaryButton}>
-                    Zobrazit výsledky služeb
-                  </Link>
+      {/* Hero sekce - plná šířka */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroBackdrop}></div>
+        <div className={styles.heroContainer}>
+          <div className={styles.heroContent}>
+            <div className={styles.heroTextContent}>
+              <div className={styles.heroTagline}>ONLINE TRENÉR</div>
+              <h1 className={styles.heroTitle}>
+                <span className={styles.heroTitleMain}>DAVID</span> 
+                <span className={styles.heroTitleOutline}>UDIČ</span>
+              </h1>
+              <p className={styles.heroText}>
+                Jídelníčky a tréninkové plány. Pomůžu vám dosáhnout vašich fitness cílů!
+              </p>
+              <div className={styles.heroButtons}>
+                <Link href="/recenze" className={styles.secondaryButton}>
+                  Přečíst si recenze klientů
+                </Link>
+                <Link href="/sluzby" className={styles.primaryButton}>
+                  Zobrazit výsledky služeb
+                </Link>
+              </div>
+              <div className={styles.reviewStats}>
+                <div className={styles.starRating}>
+                  ★★★★★
                 </div>
-                <div className={styles.reviewStats}>
-                  <div className={styles.starRating}>
-                    ★★★★★
-                  </div>
-                  <div className={styles.clientCount}>
-                    499+ Spokojených klientů
-                  </div>
+                <div className={styles.clientCount}>
+                  499+ Spokojených klientů
                 </div>
               </div>
-              <div className={styles.heroImageContainer}>
-                <img src="/images/trener-bez-bg.png" alt="Fitness trenér" className={styles.heroImage} />
-              </div>
+            </div>
+            <div className={styles.heroImageContainer}>
+              <img src="/images/trener-bez-bg.png" alt="Fitness trenér" className={styles.heroImage} />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Marquee sekce */}
-        <section className={styles.marqueeSection}>
-          <div className={styles.marqueeTrack}>
-            <div className={styles.marqueeContent}>
-              <span>PŘEKONEJ SVÉ LIMITY</span>
-              <span className={styles.marqueeSeparator}>•</span>
-              <span>STAŇ SE NEJLEPŠÍ VERZÍ SEBE SAMA</span>
-              <span className={styles.marqueeSeparator}>•</span>
-              <span>TRANSFORMACE ZAČÍNÁ DNES</span>
-              <span className={styles.marqueeSeparator}>•</span>
-              <span>SILNĚJŠÍ KAŽDÝM DNEM</span>
-              <span className={styles.marqueeSeparator}>•</span>
-              <span>PŘEKONEJ SVÉ LIMITY</span>
-              <span className={styles.marqueeSeparator}>•</span>
-              <span>STAŇ SE NEJLEPŠÍ VERZÍ SEBE SAMA</span>
-              <span className={styles.marqueeSeparator}>•</span>
-              <span>TRANSFORMACE ZAČÍNÁ DNES</span>
-              <span className={styles.marqueeSeparator}>•</span>
-              <span>SILNĚJŠÍ KAŽDÝM DNEM</span>
-              <span className={styles.marqueeSeparator}>•</span>
-            </div>
+      <section className={styles.marqueeSection}>
+        <div className={styles.marqueeTrack}>
+          <div className={styles.marqueeContent}>
+            <span>PŘEKONEJ SVÉ LIMITY</span>
+            <span className={styles.marqueeSeparator}>•</span>
+            <span>STAŇ SE NEJLEPŠÍ VERZÍ SEBE SAMA</span>
+            <span className={styles.marqueeSeparator}>•</span>
+            <span>TRANSFORMACE ZAČÍNÁ DNES</span>
+            <span className={styles.marqueeSeparator}>•</span>
+            <span>SILNĚJŠÍ KAŽDÝM DNEM</span>
+            <span className={styles.marqueeSeparator}>•</span>
+            <span>PŘEKONEJ SVÉ LIMITY</span>
+            <span className={styles.marqueeSeparator}>•</span>
+            <span>STAŇ SE NEJLEPŠÍ VERZÍ SEBE SAMA</span>
+            <span className={styles.marqueeSeparator}>•</span>
+            <span>TRANSFORMACE ZAČÍNÁ DNES</span>
+            <span className={styles.marqueeSeparator}>•</span>
+            <span>SILNĚJŠÍ KAŽDÝM DNEM</span>
+            <span className={styles.marqueeSeparator}>•</span>
           </div>
-        </section>
-
+        </div>
+      </section>
+      
+      <div className={layoutStyles.homePageContent}>
         <section className={styles.servicesSection}>
           <div className={styles.sectionHeader}>
             <h2>SLUŽBY PRO TVŮJ ÚSPĚCH</h2>

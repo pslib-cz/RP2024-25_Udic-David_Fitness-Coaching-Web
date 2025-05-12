@@ -1,0 +1,630 @@
+.aboutContainer {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .heroSection {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0088cc;
+    display: block;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  .title {
+    font-size: 6rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #0088cc;
+    line-height: 1.1;
+    letter-spacing: 1px;
+  }
+  
+  .separator {
+    width: 60px;
+    height: 3px;
+    background-color: #0088cc;
+    margin: 0 auto;
+  }
+
+  .introSection {
+    padding: 80px 20px;
+    background-color: var(--color-background);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+  
+  .introWrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .imageFrame {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  :global(.dark-mode) .imageFrame {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .trainerImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageFrame:hover .trainerImage {
+    transform: scale(1.02);
+  }
+  
+  .experienceBadge {
+    position: absolute;
+    right: -20px;
+    bottom: 40px;
+    background: linear-gradient(135deg, #0088cc, #00a0cc);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 136, 204, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .experienceYears {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .experienceText {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .introContent {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .introTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--color-text-primary);
+    position: relative;
+  }
+  
+  .introTitle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #0088cc, #00a0cc);
+  }
+  
+  .introParagraph {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+  }
+  
+  .signatureContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .signatureImage {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .signatureInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signatureName {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+  
+  .signatureTitle {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+  
+  .approachSection {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  :global(.dark-mode) .approachSection {
+    background-color: #121212;
+  }
+  
+  .approachWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--color-text-primary);
+    position: relative;
+  }
+  
+  .sectionTitle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #0088cc, #00a0cc);
+    transform: translateX(-50%);
+  }
+  
+  .approachContainer {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+  }
+  
+  .approachText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    text-align: center;
+  }
+  
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .featureCard {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  :global(.dark-mode) .featureCard {
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  :global(.dark-mode) .featureCard:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .featureIconContainer {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #0088cc, #00a0cc);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .featureIcon {
+    font-size: 24px;
+  }
+  
+  .featureTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--color-text-primary);
+  }
+  
+  .featureDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+  }
+
+  .statsSection {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0088cc, #00a0cc);
+    color: white;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .statItem {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .statNumber {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .statText {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+
+  .testimonialsSection {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  :global(.dark-mode) .testimonialsSection {
+    background-color: #121212;
+  }
+  
+  .testimonialsWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonialsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .testimonialCard {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  :global(.dark-mode) .testimonialCard {
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .testimonialCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonialStars {
+    display: flex;
+    color: #FFD700;
+    margin-bottom: 15px;
+    gap: 5px;
+  }
+  
+  .testimonialText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .testimonialAuthor {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .authorName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+  
+  .authorInfo {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-top: 5px;
+  }
+
+  .certificatesSection {
+    padding: 80px 20px;
+    background-color: white;
+  }
+  
+  :global(.dark-mode) .certificatesSection {
+    background-color: #0d0d0d;
+  }
+  
+  .certificatesWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .certificatesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .certificateCard {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  :global(.dark-mode) .certificateCard {
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .certificateCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certificateIcon {
+    color: #0088cc;
+    margin-bottom: 20px;
+  }
+  
+  .certificateTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--color-text-primary);
+  }
+  
+  .certificateDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+  }
+  
+  .ctaSection {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0a2540 0%, #0d385b 100%);
+    color: white;
+    text-align: center;
+  }
+  
+  .ctaContainer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .ctaTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .ctaText {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #0088cc, #00a0cc);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .ctaButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 136, 204, 0.3);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .introWrapper {
+      gap: 40px;
+    }
+    
+    .introTitle {
+      font-size: 2.2rem;
+    }
+    
+    .title {
+      font-size: 3.5rem;
+    }
+    
+    .statsContainer {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .introWrapper {
+      flex-direction: column;
+    }
+    
+    .imageContainer {
+      margin-bottom: 40px;
+      max-width: 400px;
+      width: 100%;
+    }
+    
+    .statItem {
+      min-width: 120px;
+    }
+    
+    .statNumber {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection {
+      min-height: 350px;
+      padding: 40px 15px;
+    }
+    
+    .title {
+      font-size: 3rem;
+    }
+    
+    .introSection,
+    .approachSection,
+    .testimonialsSection,
+    .certificatesSection,
+    .ctaSection {
+      padding: 60px 15px;
+    }
+    
+    .sectionTitle,
+    .ctaTitle {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    
+    .approachText {
+      font-size: 1rem;
+    }
+    
+    .statsContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    
+    .statItem {
+      padding: 15px;
+    }
+    
+    .ctaText {
+      font-size: 1.1rem;
+    }
+    
+    .ctaButton {
+      padding: 12px 30px;
+      font-size: 1rem;
+    }
+    
+    .subtitle::before, .subtitle::after {
+      width: 20px;
+    }
+    
+    .subtitle::before {
+      left: -25px;
+    }
+    
+    .subtitle::after {
+      right: -25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heroSection {
+      min-height: 300px;
+      padding: 30px 15px;
+    }
+    
+    .title {
+      font-size: 2.6rem;
+    }
+    
+    .subtitle {
+      font-size: 1rem;
+    }
+    
+    .introSection,
+    .approachSection,
+    .testimonialsSection,
+    .certificatesSection,
+    .ctaSection {
+      padding: 40px 15px;
+    }
+    
+    .introTitle {
+      font-size: 1.8rem;
+    }
+    
+    .introParagraph,
+    .approachText {
+      font-size: 0.95rem;
+    }
+    
+    .featureCard,
+    .testimonialCard,
+    .certificateCard {
+      padding: 20px;
+    }
+    
+    .featureTitle,
+    .certificateTitle {
+      font-size: 1.1rem;
+    }
+    
+    .statsContainer {
+      grid-template-columns: 1fr;
+    }
+    
+    .sectionTitle,
+    .ctaTitle {
+      font-size: 1.8rem;
+    }
+    
+    .subtitle::before, .subtitle::after {
+      display: none;
+    }
+  }
