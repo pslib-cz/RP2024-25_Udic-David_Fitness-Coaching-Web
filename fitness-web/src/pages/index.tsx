@@ -367,26 +367,26 @@ const HomePage: React.FC = () => {
               <div className={`${styles.transformationCard} ${isMobile ? styles.transformationSlide : ''}`}>
                 <div className={styles.transformationImages}>
                   <div className={styles.transformationImageBefore}>
-                    <img src="/images/trener-bez-bg.png" alt="Před transformací" />
+                    <img src="/images/5.png" alt="Před transformací" />
                     <span className={styles.transformationLabel}>PŘED</span>
                   </div>
                   <div className={styles.transformationImageAfter}>
-                    <img src="/images/trener.jpg" alt="Po transformaci" />
+                    <img src="/images/6.png" alt="Po transformaci" />
                     <span className={styles.transformationLabel}>PO</span>
                   </div>
                 </div>
                 <div className={styles.transformationContent}>
-                  <h3 className={styles.transformationName}>Martin, 35 let</h3>
+                  <h3 className={styles.transformationName}>Martina, 35 let</h3>
                   <p className={styles.transformationText}>
-                    &quot;Po letech neúspěšných pokusů jsem konečně našel trenéra, který mi rozumí. Výsledky přišly rychleji, než jsem čekal.&quot;
+                    &quot;Po letech neúspěšných pokusů jsem konečně našla trenéra, který mi rozumí. Výsledky přišly rychleji, než jsem čekala.&quot;
                   </p>
                   <div className={styles.transformationStats}>
                     <div className={styles.transformationStat}>
-                      <span className={styles.transformationStatValue}>+5 kg</span>
-                      <span className={styles.transformationStatLabel}>Nárůst svalů</span>
+                      <span className={styles.transformationStatValue}>-11 kg</span>
+                      <span className={styles.transformationStatLabel}>Úbytek váhy</span>
                     </div>
                     <div className={styles.transformationStat}>
-                      <span className={styles.transformationStatValue}>6 měsíců</span>
+                      <span className={styles.transformationStatValue}>5 měsíců</span>
                       <span className={styles.transformationStatLabel}>Doba trvání</span>
                     </div>
                   </div>
