@@ -1,7 +1,7 @@
-# Časový plán
-
 # Web běží na této doméně:
 - https://udicdavidfitnesscoachingweb.vercel.app
+
+# Časový plán
 
 # figma
 - https://www.figma.com/design/y6i4N2h8MqdeMSulwDqIjs/Untitled?node-id=0-1&t=4Bg1PjfNRLeeJz0Y-1
