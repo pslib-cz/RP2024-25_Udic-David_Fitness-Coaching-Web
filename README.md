@@ -1,3 +1,6 @@
+# Web běží na této doméně:
+- https://udicdavidfitnesscoachingweb.vercel.app
+
 # Časový plán
 
 # figma
