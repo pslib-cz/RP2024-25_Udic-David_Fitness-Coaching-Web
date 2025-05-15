@@ -378,7 +378,7 @@ const HomePage: React.FC = () => {
                 <div className={styles.transformationContent}>
                   <h3 className={styles.transformationName}>Martina, 35 let</h3>
                   <p className={styles.transformationText}>
-                    &quot;Po letech neúspěšných pokusů jsem konečně našla trenéra, který mi rozumí. Výsledky přišly rychleji, než jsem čekala.&quot;
+                    &quot;Po letech neúspěšných pokusů jsem konečně našla trenéra, který mi rozumí a poradí. Výsledky přišly rychleji, než jsem čekala.&quot;
                   </p>
                   <div className={styles.transformationStats}>
                     <div className={styles.transformationStat}>
