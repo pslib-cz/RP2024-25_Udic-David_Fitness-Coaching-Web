@@ -138,7 +138,7 @@ const AboutMePage: NextPage = () => {
           </div>
         </section>
 
-        <section className={styles.testimonialsSection}>
+        <section className={styles.testimonialsSection} id="testimonials">
           <div className={styles.testimonialsWrapper}>
             <h2 className={styles.sectionTitle}>Co říkají klienti</h2>
             <div className={styles.testimonialsContainer}>

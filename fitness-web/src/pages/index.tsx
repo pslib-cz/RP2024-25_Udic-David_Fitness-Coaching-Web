@@ -76,13 +76,13 @@ const HomePage: React.FC = () => {
                 Jídelníčky a tréninkové plány. Pomůžu vám dosáhnout vašich fitness cílů!
               </p>
               <div className={styles.heroButtons}>
-                <Link href="/recenze" className={styles.secondaryButton}>
-                  Přečíst si recenze klientů
-                </Link>
-                <Link href="/sluzby" className={styles.primaryButton}>
-                  Zobrazit výsledky služeb
-                </Link>
-              </div>
+  <Link href="/aboutme#testimonials" className={styles.secondaryButton}>
+    Přečíst si recenze klientů
+  </Link>
+  <a href="#transformations" className={styles.primaryButton}>
+    Zobrazit výsledky služeb
+  </a>
+</div>
               <div className={styles.reviewStats}>
                 <div className={styles.starRating}>
                   ★★★★★
@@ -292,7 +292,7 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Proměny klientů */}
-        <section className={styles.transformationsSection}>
+        <section className={styles.transformationsSection} id="transformations">
           <div className={styles.sectionHeader}>
             <h2>ÚSPĚŠNÉ PROMĚNY</h2>
             <p className={styles.sectionSubtitle}>Inspirujte se skutečnými výsledky mých klientů</p>
